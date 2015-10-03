@@ -43,4 +43,7 @@ app.use('/', swaggerUi({docs: '/api-docs'}));
 app.use('/app', express.static(PUBLIC_DIR));
 app.use(errorHandler);
 
-app.listen(8000, console.log.bind(console, 'Server Started'));
+app.listen(
+  process.env.PORT || 8000,
+  console.log.bind(console, 'Server Started')
+);
