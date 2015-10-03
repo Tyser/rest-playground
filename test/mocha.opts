@@ -1,0 +1,4 @@
+test/lib/*.js
+--reporter-spec
+--require ./index
+--require ./test/helpers/chai

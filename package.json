@@ -1,0 +1,51 @@
+{
+  "name": "rest-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon index",
+    "start": "node index",
+    "jshint": "jshint --reporter node_modules/jshint-stylish index.js app.js routes/** config/**",
+    "check-cov": "istanbul check-coverage",
+    "test": "NODE_ENV=test istanbul cover _mocha",
+    "posttest": "npm run check-cov; npm run jshint;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dgm-ria-fall-2015/rest-playground.git"
+  },
+  "author": "ksmithut",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dgm-ria-fall-2015/rest-playground/issues"
+  },
+  "homepage": "https://github.com/dgm-ria-fall-2015/rest-playground",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "bluebird": "^2.10.2",
+    "body-parser": "^1.14.1",
+    "compression": "^1.6.0",
+    "config": "^1.16.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "object-path": "^0.9.2",
+    "sails-memory": "^0.10.5",
+    "swaggerize-ui": "^1.0.1",
+    "uid2": "0.0.3",
+    "validator": "^4.0.6",
+    "waterline": "^0.10.26",
+    "waterline-models": "^0.3.0"
+  },
+  "devDependencies": {
+    "chai": "^3.3.0",
+    "chai-as-promised": "^5.1.0",
+    "istanbul": "^0.3.21",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.0.1",
+    "mocha": "^2.3.3",
+    "mocha-lcov-reporter": "^1.0.0",
+    "supertest": "^1.1.0",
+    "supertest-as-promised": "^2.0.2"
+  }
+}
