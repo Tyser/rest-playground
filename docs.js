@@ -378,11 +378,12 @@ module.exports = {
     Dates: {
       properties: {
         createdAt: {
-          type: 'date',
+          type: 'string',
           format: 'date-time'
         },
         updatedAt: {
-          type: 'date'
+          type: 'string',
+          format: 'date-time'
         }
       }
     },
