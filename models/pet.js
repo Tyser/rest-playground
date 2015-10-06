@@ -3,6 +3,7 @@
 export default {
   identity: 'pet',
   connection: 'default',
+  migrate: 'safe',
   attributes: {
     name: {
       type: 'string',

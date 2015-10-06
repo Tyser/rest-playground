@@ -3,6 +3,7 @@
 export default {
   identity: 'person',
   connection: 'default',
+  migrate: 'safe',
   attributes: {
     firstName: {
       type: 'string',
